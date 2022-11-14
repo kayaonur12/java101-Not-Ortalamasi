@@ -32,7 +32,19 @@ public class Not_Ortalamasi {
         boolean durum = sonuc >= 60;
         String gecis = durum ? "Sınıfı Geçti" : "Sınıfta Kaldı";
         System.out.println("Geçme Durumu: " + gecis);
+        /*
+        Alternatif Yöntem 1
+        System.out.println((sonuc > 60) ? "sınıfı gecti" : "kaldı"); böyle bir kodlada üstteki boolean kısmı yazılabiliyormuş
 
-
+        Alternatif Yöntem 2
+        if(ortalama>=50){
+            System.out.println("Ortalamanız: "+ortalama+"\nTebrikler Geçtiniz !");
+        }
+        else if(ortalama<=45 && ortalama <50){
+            System.out.println("Sorumlu Geçtiniz !");
+        }
+        else{
+            System.out.println("Maalesef Kaldınız !");
+        bir de if döngüsüyle böyle de yazılabilirmiş*/
     }
 }
