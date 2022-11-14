@@ -11,53 +11,56 @@ public class Grading {
         System.out.print("Please enter your Mathematics Grade: ");
         grade = input.nextInt();
         if (grade >= 0 && grade <= 100) {
-            i += 1;
+            i ++;
             sum += grade;
         }
-        n += 1;
+        n ++;
 
         System.out.print("Please enter your Physics Grade: ");
         grade = input.nextInt();
         if (grade >= 0 && grade <= 100) {
-            i += 1;
+            i ++;
             sum += grade;
         }
-        n += 1;
+        n ++;
 
         System.out.print("Please enter your Turkish Grade: ");
         grade = input.nextInt();
         if (grade >= 0 && grade <= 100) {
-            i += 1;
+            i ++;
             sum += grade;
         }
-        n += 1;
+        n ++;
 
         System.out.print("Please enter your Chemistry Grade: ");
         grade = input.nextInt();
         if (grade >= 0 && grade <= 100) {
-            i += 1;
+            i ++;
             sum += grade;
         }
-        n += 1;
+        n ++;
 
         System.out.print("Please enter your Music Grade: ");
         grade = input.nextInt();
         if (grade >= 0 && grade <= 100) {
-            i += 1;
+            i ++;
             sum += grade;
         }
-        n += 1;
+        n ++;
 
-        if (n != i) {
-            System.out.println("One or more invalid input. Your grade entries should be between 0 and 100. Please reinitiate the program!");
+        if (i == 0) {
+            System.out.println("All inputs are invalid . Your grade entries should be between 0 and 100. Please reinitiate the program!");
         } else {
             double ave = sum / i;
             System.out.println("Your Overall Grade is: " + ave);
-            if (ave > 55) {
-                System.out.print("You Passed!");
+            if (ave > 55 && i==n) {
+                System.out.println("You Passed!");
             } else {
-                System.out.print("You Failed!");
+                System.out.println("You Failed!");
             }
+            if (i < n)
+                System.out.println((n-i) + " of your grades has not been considered (grade entries should be between 0 and 100)");
         }
+
     }
 }
