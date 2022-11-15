@@ -5,8 +5,7 @@ import java.util.Scanner;
 public class Flight_Price {
     public static void main(String[] args) {
         int km, age, trip;
-        double priceperkm = 0.10, total = 0, discount = 0;
-        boolean isError = false;
+        double priceperkm = 0.10, total;
 
         Scanner input = new Scanner(System.in);
         System.out.print("Please enter destination distance in km: ");
@@ -28,14 +27,9 @@ public class Flight_Price {
             if (trip == 2) {
                 total = total * 0.8;
             }
+            System.out.println("Total Price = " + total + "TL");
         } else {
-            isError = true;
-        }
-
-        if (isError) {
             System.out.println("Wrong Input");
-        } else {
-            System.out.println("Total Price = " + (total - discount) + "TL");
         }
     }
 }
