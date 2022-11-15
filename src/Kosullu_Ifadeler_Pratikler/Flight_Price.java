@@ -22,7 +22,7 @@ public class Flight_Price {
             } else if (age < 24) {
                 total = total * 0.9;
             } else if (age > 65) {
-                total = total * 0.3;
+                total = total * 0.7;
             }
             if (trip == 2) {
                 total = total * 0.8;
