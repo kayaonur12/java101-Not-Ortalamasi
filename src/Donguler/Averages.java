@@ -9,12 +9,12 @@ public class Averages {
         double sum = 0, k = 0;
 
         do {
-            System.out.print("Please enter an integer bigger than 2: ");
+            System.out.print("Please enter an integer bigger than 11: ");
             entry = input.nextInt();
-        } while (entry <= 2);
+        } while (entry < 12);
 
         for (int i = 1; i <= entry; i++) {
-            if (i % 3 == 0 || i % 4 == 0) {
+            if (i % 3 == 0 && i % 4 == 0) {
                 sum += i;
                 k++;
             }
