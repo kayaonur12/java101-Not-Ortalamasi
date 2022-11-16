@@ -2,7 +2,7 @@ package Donguler;
 
 import java.util.Scanner;
 
-public class Till_Double {
+public class Averages {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int entry;
