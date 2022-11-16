@@ -9,7 +9,7 @@ public class Power_Finder {
         System.out.print("Enter a number: ");
         entry = input.nextInt();
 
-        // to write all square root accordingly this is the code. If we want it separately than the solution is below.
+        // To write all powers accordingly this is the code. If we want it separately than the solution is below.
         while (i < entry) {
             if (i == k) {
                 k = k * 4;
