@@ -10,6 +10,7 @@ public class Diamond_of_Stars {
         int entry = input.nextInt();
 
         for (k = 1; k < (entry * 2); k++) {
+            //first part of diamond till the pick (inclcuding pick)
             if (k <= entry) {
                 for (int i = 1; i < entry * 2; i++) {
                     if (i < (entry - (k-1)))
@@ -18,6 +19,7 @@ public class Diamond_of_Stars {
                         System.out.print("*");
                     else System.out.print(" ");
                 }
+                //second part of diamond (except pick)
             } else {
                 for (int i = 1; i < entry * 2; i++) {
                     if (i <= (k - entry))
