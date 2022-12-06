@@ -61,6 +61,7 @@ public class Calculator {
 
         do {
             System.out.print("""
+                    --------------------
                     Please select what would you like to do from below mentioned calculations.
                     1- Addition
                     2- Subtraction
@@ -75,7 +76,7 @@ public class Calculator {
             n = input.nextInt();
 
             i++;
-            if (n == 1) {
+            if (n == 1 || n == 2 || n == 3 || n == 4) {
                 if (i == 1) {
                     System.out.print("Please indicate the first number: ");
                     a = input.nextInt();
@@ -85,40 +86,12 @@ public class Calculator {
                 }
                 System.out.print("Please indicate second number: ");
                 b = input.nextInt();
-                output = plus(a, b);
-            } else if (n == 2) {
-                if (i == 1) {
-                    System.out.print("Please indicate the first number: ");
-                    a = input.nextInt();
-                } else {
-                    System.out.println("First number is: " + output);
-                    a = output;
+                switch (n) {
+                    case (1) -> output = plus(a, b);
+                    case (2) -> output = minus(a, b);
+                    case (3) -> output = multiple(a, b);
+                    case (4) -> output = division(a, b);
                 }
-                System.out.print("Please indicate second number: ");
-                b = input.nextInt();
-                output = minus(a, b);
-            } else if (n == 3) {
-                if (i == 1) {
-                    System.out.print("Please indicate the first number: ");
-                    a = input.nextInt();
-                } else {
-                    System.out.println("First number is: " + output);
-                    a = output;
-                }
-                System.out.print("Please indicate second number: ");
-                b = input.nextInt();
-                output = multiple(a, b);
-            } else if (n == 4) {
-                if (i == 1) {
-                    System.out.print("Please indicate the first number: ");
-                    a = input.nextInt();
-                } else {
-                    System.out.println("First number is: " + output);
-                    a = output;
-                }
-                System.out.print("Please indicate second number: ");
-                b = input.nextInt();
-                output = division(a, b);
             } else if (n == 5) {
                 if (i == 1) {
                     System.out.print("Please indicate the base: ");
@@ -154,6 +127,6 @@ public class Calculator {
                 i = 0;
             }
         } while (n != 9);
-        System.out.println("Thanks for using our calculator");
+        System.out.println("Thanks for using our calculator!");
     }
 }
