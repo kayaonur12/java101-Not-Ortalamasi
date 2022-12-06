@@ -2,7 +2,7 @@ package Metotlar;
 
 import java.util.Scanner;
 
-// This calculator can use previous calculations result and do subsequent calculations.
+// This calculator can do subsequent calculations by using previous calculation result.
 
 public class Calculator {
     static int plus(int a, int b) {
