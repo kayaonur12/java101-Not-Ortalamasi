@@ -23,7 +23,7 @@ public class Main {
         s1.isPass();
 
         Student s2 = new Student("Human2", "0002","11-F",Mathematics,Physics,History);
-        s1.addBulkExamNote(10,15,100);
+        s2.addBulkExamNote(10,15,100);
         s2.isPass();
 
     }
