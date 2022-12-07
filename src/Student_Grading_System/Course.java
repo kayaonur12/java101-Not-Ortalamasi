@@ -5,13 +5,18 @@ public class Course {
     String name;
     String code;
     String prefix;
-    int note;
+    int examNote;
+    int oralNote;
+    double averageNote;
+    double examWeight;
 
 
-    Course(String name, String code, String prefix) {
+
+    Course(String name, String code, String prefix, double examWeight) {
         this.name = name;
         this.code = code;
         this.prefix = prefix;
+        this.examWeight = examWeight;
     }
 
     void addTeacher(Teacher teacher) {
