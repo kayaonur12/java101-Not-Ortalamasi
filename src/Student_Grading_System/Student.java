@@ -55,12 +55,12 @@ public class Student {
     void isPass() {
         averageNote();
         this.average = ((this.c1.averageNote + this.c2.averageNote + this.c3.averageNote) / 3.0);
-        printNote();
+
         if (this.average > 60)
             System.out.println(this.stuNo + " " + this.name + " Passed the class!");
         else
             System.out.println(this.stuNo + " " + this.name + " Couldn't Passed the class!");
-
+        printNote();
         System.out.println("-------------");
     }
 }
