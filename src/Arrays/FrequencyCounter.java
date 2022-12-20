@@ -3,7 +3,43 @@ package Arrays;
 import java.util.*;
 
 public class FrequencyCounter {
+    public static void main(String[] args) {
+        int[] list = {10, 20, 20, 10, 10, 20, 5, 20, 25};
 
+        System.out.println("Given array is: " + Arrays.toString(list));
+
+        Arrays.sort(list);
+        System.out.println("Sorted array is: " + Arrays.toString(list));
+
+        int count =0;
+
+        int m = (list[0]-1);
+
+        for (int i : list) {
+            if (m != i) {
+                for (int k : list
+                ) {
+                    if (i == k) {
+                        count++;
+                        m = k;
+                    }
+                }
+                System.out.println(i + " repeated " + count + " times.");
+                count = 0;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+/* alternatif
     static boolean isDuplicated(int[] array, int value) {
         for (int i :
                 array) {
@@ -38,4 +74,6 @@ public class FrequencyCounter {
             }
         }
     }
-}
+
+ */
+
