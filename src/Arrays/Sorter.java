@@ -16,6 +16,8 @@ public class Sorter {
             i++;
         }
 
+        //Alternative code to Array.sort
+
         int suspension, k, j;
         for (k = 0; k < list.length; k++) {
             for (j = k; j > 0; j--) {
