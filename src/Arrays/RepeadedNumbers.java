@@ -18,7 +18,7 @@ public class RepeadedNumbers {
         int[] list = {5, 9, 8, 13, 4, 8, 9, 6, 7, 8, 3, 2, 5, 11, 13, 15, 8};
         int[] list2 = new int[list.length];
         Arrays.sort(list);
-        System.out.println("Inıtial sorted array is:\t" + Arrays.toString(list));
+        System.out.println("Initial sorted array is:\t" + Arrays.toString(list));
 
         int m = 0;
         for (int i = 0; i < (list.length); i++) {
